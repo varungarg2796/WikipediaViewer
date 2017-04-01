@@ -1,0 +1,39 @@
+body{
+	 background-color:  #162234;
+}
+
+h1{
+	color: white;
+}
+
+input{
+	color:white;
+	background-color: #162234;
+	border: 5px solid #5cb85c;
+	border-radius: 10px;
+	height: 35px;
+}
+
+.infoDiv{
+	border-radius: 5px;
+	width:80%;
+	background-color:#F5F5F5 ;
+	color: black;
+	box-shadow: 5px 5px 5px grey;
+	margin-top: 20px;
+}
+
+h5{
+	color: orange;
+}
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+#devBy{
+	color: white;
+}
