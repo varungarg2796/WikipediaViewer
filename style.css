@@ -11,3 +11,15 @@ input{
 	height: 30px;
 }
 
+.infoDiv{
+	margin-top: 20px;
+	color:white;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
