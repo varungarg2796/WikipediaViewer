@@ -32,7 +32,7 @@ function appendResults(obj,results,desc,link)
 		var div = document.getElementById('divID');
 		console.log(results[i]);
 		div.innerHTML = div.innerHTML + 
-		'<a target="_blank" href='+link[i]+'><div class="infoDiv">'+results[i]+'<br>'+ desc[i] +        '</div></a>';
+		'<a target="_blank" href='+link[i]+'><div class="infoDiv container-fluid text-center"><b>'+results[i]+'</b><br>'+ desc[i] +        '</div></a>';
 	}
 }
 
