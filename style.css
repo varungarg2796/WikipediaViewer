@@ -1,5 +1,13 @@
 body{
 	 background-color:  #162234;
-	 
+}
+
+h1{
+	color: white;
+}
+
+input{
+	border-radius: 5px;
+	height: 30px;
 }
 
