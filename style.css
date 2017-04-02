@@ -14,6 +14,9 @@ input{
 	height: 35px;
 }
 
+#rand{
+	margin-top: 10px;
+}
 .infoDiv{
 	border-radius: 5px;
 	width:80%;

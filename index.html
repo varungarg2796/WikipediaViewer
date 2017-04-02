@@ -16,12 +16,16 @@
 
 		<h1>Wiki Search</h1>
 		<h5>Search from the best!</h5>	
-		<input type="search" id="search" placeholder="Search...">		    	
-		<button id="butt" class="btn btn-success">Search</button>
-		<a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'><button class="btn btn-danger">Random Article</button></a>
+		<input type="search" id="search" placeholder="Search..." onkeypress="handle(event)">		    	
+		<button id="butt" class="btn btn-success" onclick="getSetData()">Search</button>
+		<br>
+		<a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'><button class="btn btn-danger" id="rand">Random Article</button></a>
 		<div id="divID"></div>
-		<div> <h5 id="devBy">Developed by <a href="https://github.com/varungarg2796">Varun Garg</a> <h5></div>
+		<footer>
+			
+		 <h5 id="devBy">Developed by <a href="https://github.com/varungarg2796">Varun Garg</a> <h5>
 
+		</footer>
 </div>
 
 

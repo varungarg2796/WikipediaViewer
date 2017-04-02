@@ -4,8 +4,23 @@ var desc;
 var link;
 
 
-$("#butt").click(function() {
-	 $.get('https://en.wikipedia.org/w/api.php?action=opensearch&search=' + $('#search').val() + '&limit=5&namespace=0&format=json', function( data ) {
+
+ 
+function appendResults(obj,results,desc,link)
+{
+	document.getElementById("divID").innerHTML = "";
+	for (var i=0; i<5; i++) 
+	{
+		var div = document.getElementById('divID');
+		console.log(results[i]);
+		div.innerHTML = div.innerHTML + 
+		'<a target="_blank" href='+link[i]+'><div class="infoDiv container-fluid text-center"><b>'+results[i]+'</b><br>'+ desc[i] +        '</div></a>';
+	}
+}
+
+function getSetData()
+{
+		 $.get('https://en.wikipedia.org/w/api.php?action=opensearch&search=' + $('#search').val() + '&limit=5&namespace=0&format=json', function( data ) {
 	  	console.log(data);
 	  	obj=data;
 	  	results=obj[1];
@@ -21,22 +36,14 @@ $("#butt").click(function() {
 	      //$('#search').autocomplete( "search");
 	      
 	}, "jsonp" );
-   
- })
-
-function appendResults(obj,results,desc,link)
-{
-	document.getElementById("divID").innerHTML = "";
-	for (var i=0; i<5; i++) 
-	{
-		var div = document.getElementById('divID');
-		console.log(results[i]);
-		div.innerHTML = div.innerHTML + 
-		'<a target="_blank" href='+link[i]+'><div class="infoDiv container-fluid text-center"><b>'+results[i]+'</b><br>'+ desc[i] +        '</div></a>';
-	}
 }
 
-
+   function handle(e){
+        if(e.keyCode === 13){
+            e.preventDefault(); // Ensure it is only this code that rusn
+            getSetData();
+        }
+    }
 
     
   
